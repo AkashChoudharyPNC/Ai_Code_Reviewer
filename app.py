@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # Configure the API key
-genai.configure(api_key=st.st.secrets["api_key"])  # Replace with your valid API key
+genai.configure(api_key=st.secrets["api_key"])  # Replace with your valid API key
 
 # System prompt for AI model
 system_prompt = """You are an advanced AI code reviewer powered by Google Gemini, designed to analyze code, detect bugs, and provide solutions with detailed explanations. Your goal is to:
